@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #004a99;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    background: #333;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0; padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Flexbox Layout for Cards */
+.card-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px; /* Desktop width */
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Form Styling */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+}
+
+/* Media Query (Breakpoint 768px) */
+@media (max-width: 768px) {
+    .card-wrapper {
+        flex-direction: column; /* Vertikal di Mobile */
+        align-items: center;
+    }
+    
+    .card {
+        width: 90%;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
